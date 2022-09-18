@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.main {
+    width: auto;
+    height: 60px;
+    background-color: rgb(244, 244, 244);
+}
+#sidebar {
+    position: fixed;
+    top: 0px;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    transition: left 100ms linear;
+}
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar .menu  a {
+    display: block;
+    padding: 10px;
+    color: black;
+    font-family: "Raleway",sans-serif;
+    font-size: 13px;
+    gap: 25px;
+    font-stretch: expanded;
+    margin-left: 20px;
+}
+#sidebar #toggle {
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    right: -65px;
+    cursor: pointer;
+    margin-top: 20px;
+    gap: 1px;
+}
+#sidebar #toggle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 1px;
+    background: #111;
+    gap: 1px;
+
+}
+#sidebar #toggle span:nth-child(1) {
+    top: 10%;
+    
+}
+#sidebar #toggle span:nth-child(3) {
+    top: 90%;
+    
+}
+.login {
+    margin-top: 30px;
+    font-size: 13px;
+}
+.logo {
+    display: flex;
+    height: 25px;
+    width: auto;
+}
+.logo img {
+    margin-left: 110px;
+    margin-bottom: -10px;
+    margin-top: 12px;
+}
+.searchbar {
+    display: flex;
+}
+.search-box {
+    width: 500px;
+    height: 38px;
+    margin-left: 225px;
+    margin-top: -17px;
+    border-radius: 40px;
+    border: 1px gray;
+    padding: 1px;
+    letter-spacing: 0.5px;
+}
+.ad {
+    display: block;
+    margin-top: -30px;
+    margin-left: 1000px;
+    height: 28px;
+    width: 90px;
+    margin-top: -30px;
+    border-radius: 45px;
+    border: 1px solid red;
+    cursor: pointer;
+    color: red;
+    padding: 6px;
+    font-size: 11px;
+    font-family: "Raleway",sans-serif;
+    font-stretch: expanded;
+    font-weight: lighter;
+}
+.sub {
+    display: block;
+    margin-top: -29px;
+    height: 27px;
+    width: 130px;
+    margin-left: 1110px;
+    border-radius: 45px;
+    cursor: pointer;
+    color: red;
+    border: 1px solid red;
+    padding: 6px;
+    font-size: 11px;
+    font-family: "Raleway",sans-serif;
+    font-stretch: expanded;
+    font-weight: bolder;
+    font-weight: lighter;
+}
+.lan {
+    display: flex;
+    margin-top: -28px;
+    height: 10px;
+    width: 22px;
+    margin-left: 1300px;
+    cursor: pointer;
+    font-size: 30px;
+    color: darkgrey;
+}
+.moon {
+    display: flex;
+    margin-top: -8px; 
+    width: 22px;
+    margin-left: 1360px;
+    cursor: pointer;
+    font-size: 23px;
+    color: darkgrey;
+}
+.log {
+    display: block;
+    margin-top: -20px; 
+    margin-left: 1410px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: poppins;
+    color: darkgrey;
+    color: black;
+    font-stretch: expanded;
+    font-weight: 400;
+}
+.menu2 {
+    display: flex;
+    font-size: large;
+    width: auto;
+    height: 30px;
+    margin: 19px;
+    justify-content: flex-start;
+    margin-left: 45px;
+    gap: 30px;
+    font-family: poppins;
+    font-weight: 100;
+}
+.menu2 a {
+    color: rgb(92, 89, 89);
+}
+.container {
+    height: 350px;
+    width: 1130px;
+    background-color: white;
+    margin-left: 45px;
+}
+.swiper {
+    position: relative;
+    height: 350px;
+    width: 1130px;
+    margin-left: 45px;
+}
+.swiper img {
+    height: 350px;
+    width: 1080px;
+    margin-left: 45px;
+}

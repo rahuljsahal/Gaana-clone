@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <title>Gaana</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="logo">
+            <img src="./images/Gaana_(music_streaming_service)_logo.png" alt="">
+        </div>
+        <div class="searchbar">
+            <input class="search-box" type="text" placeholder="       Search Artists, Songs, Albums">
+        </div>
+        <div class="adf">
+            <button class="ad">
+                <h4>Go Ad Free</h4>
+            </button>
+        </div>
+        <div class="subs">
+            <button class="sub">
+                <h4>Get Gaana Plus</h4>
+            </button>
+        </div>
+        <div class="language">
+            <a href="#" class="lan"><i class="fa-solid fa-language"></i></a>
+        </div>
+        <div class="night">
+            <a href="#" class="moon"><i class="fa-solid fa-moon"></i></a>
+        </div>
+        <div class="login2">
+            <a href="#" class="log">Log In / Sign Up</a>
+        </div>
+        <div id="sidebar">
+            <div id="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu">
+                <a class="login" href="#"><i class="fa fa-user-circle icon" aria-hidden="false"></i> Login / signup</a>
+                <a href="#">Radio</a>
+                <a href="#">Podcast</a>
+                <a href="#">My music</a>
+                <a href="#">India's music</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu2">
+        <a href="#">All</a>
+        <a href="#">Trending Songs</a>
+        <a href="#">New Songs</a>
+        <a href="#">old Songs</a>
+        <a href="#">Moods & Genres</a>
+        <a href="#">Album</a>
+        <a href="#">Radio</a>
+        <a href="#">Podcast</a>
+        <a href="#">My Music</a>
+    </div>
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="/images/1.webp" alt=""></div>
+                <div class="swiper-slide"><img src="/images/2.webp" alt=""></div>
+                <div class="swiper-slide"><img src="/images/3.webp" alt=""></div>
+                <div class="swiper-slide"><img src="/images/4.webp" alt=""></div>
+                <div class="swiper-slide"><img src="/images/5.webp" alt=""></div>
+                <div class="swiper-slide"><img src="/images/6.webp" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </div>
+
+    <script src="/link.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+
+loop: true,
+
+
+pagination: {
+    el: '.swiper-pagination',
+},
+
+
+navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+},
+
+});
+    </script>
+</body>
+
+</html>
